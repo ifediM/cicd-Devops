@@ -19,7 +19,7 @@ jobs:
         
   deploy:
     needs: build
-    runs-on: [aws-ec2]
+    runs-on: [aws-sheriff]
     steps:
       - name: Pull image from docker hub
         run: docker pull ifedim/sheriff_assignment:latest
