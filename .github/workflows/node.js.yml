@@ -13,7 +13,7 @@ jobs:
       - name: Login to docker hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }} 
       - name: Build docker image
-        run: docker build -t ifedim/sheriff_assignment ./heroes-frontend
+        run: docker build -t ifedim/sheriff_assignment .
       - name: Publish image to docker hub
         run: docker push ifedim/sheriff_assignment:latest
         
