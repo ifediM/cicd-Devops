@@ -26,4 +26,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f sheriff_assignment-container
       - name: Run docker container
-        run: docker run -d --name sheriff_assignment-container ifedim/sheriff_assignment 
+        run: docker run -d --name sheriff_assignment-container ifedim/sheriff_assignment
